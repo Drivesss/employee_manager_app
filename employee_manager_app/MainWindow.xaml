@@ -1,0 +1,24 @@
+﻿<Window x:Class="employee_manager_app.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:employee_manager_app"
+        mc:Ignorable="d"
+        Title="EmpManApp" Height="450" Width="820" WindowStyle="ThreeDBorderWindow">
+    <Grid x:Name="MainEMA" Background="White" Margin="5">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition ></RowDefinition>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Orientation="Horizontal">
+            <Button x:Name="applicantButton" Content="Соискатели" Height="35" MinWidth="187.5" Margin="5" Click="applicantButton_Click"></Button>
+            <Button x:Name="employeeButton" Content="Сотрудники" Height="35" MinWidth="187.5" Margin="5" Click="employeeButton_Click"></Button>
+            <Button x:Name="positionButton" Content="Должности" Height="35" MinWidth="187.5" Margin="5" Click="positionButton_Click"></Button>
+            <Button x:Name="structuralDivisionButton" Content="Структурные подразделения" Height="35" MinWidth="187.5" Margin="5" Click="structuralDivisionButton_Click"></Button> 
+        </StackPanel>
+        <Frame x:Name="MainFrame" Grid.Row="1" Margin=" 0 5 0 0 " NavigationUIVisibility="Hidden">
+            
+        </Frame>
+    </Grid>
+</Window>
